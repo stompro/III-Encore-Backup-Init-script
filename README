@@ -1,0 +1,12 @@
+Automatically initialize Encore backup tapes.
+Author: Josh Stompro, Lake Agassiz Regional Library, Moorhead MN
+Version: 0.1
+
+When this script is run it connects to the encore admin console
+and initializes the tape currently in the tape drive if it isn't
+already initialized.
+
+Requires WWW::Mechanize be installed.
+
+Changelog:
+1/20/2012: Initial Release Version 0.1
