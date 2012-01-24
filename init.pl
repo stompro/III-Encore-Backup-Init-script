@@ -1,37 +1,36 @@
 #!/usr/bin/perl
-/*
-    Copyright 2012 Josh Stompro <code47@stompro.org>
-
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-Automatically initialize Encore backup tapes.
-Author: Josh Stompro, Lake Agassiz Regional Library, Moorhead MN
-Version: 0.1
-
-When this script is run it connects to the encore admin console
-and initializes the tape currently in the tape drive if it isn't
-already initialized.
-
-Changelog:
-1/20/2012: Initial Release Version 0.1
-
-*/
+#
+#    Copyright 2012 Josh Stompro <code47@stompro.org>
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+#Automatically initialize Encore backup tapes.
+#Author: Josh Stompro, Lake Agassiz Regional Library, Moorhead MN
+#Version: 0.1
+#
+#When this script is run it connects to the encore admin console
+#and initializes the tape currently in the tape drive if it isn't
+#already initialized.
+#
+#Changelog:
+#1/20/2012: Initial Release Version 0.1
+#
 
 #Modify the following variables to match your Encore system.
-my $server = "find.larl.org";
-my $username = "encoread";
-my $password = "larladm";
+my $server = "encore.example1.org";
+my $username = "username";
+my $password = "password";
 
 #This will probably be the same for your system
 my $startpage = "http://$server/iii/admin/SignOnPage.html";
